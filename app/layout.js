@@ -8,10 +8,30 @@ export const metadata = {
     google: "DCHdDvSOiQ0HxQ9DY1-w7fIBXySOgmoXGsL3oLrwAtk",
   },
 };
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "ARCOMEX",
+              url: "https://arcomex.com.br",
+              description:
+                "Empresa especializada em perfuração e desmonte controlado de rocha.",
+              areaServed: "Brasil",
+            }),
+          }}
+        />
+
+        {children}
+
+      </body>
     </html>
   );
 }
