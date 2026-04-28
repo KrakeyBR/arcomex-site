@@ -106,28 +106,28 @@ export default function ArcomexSite() {
       location: "Área com tráfego e entorno sensível",
       description:
         "Operação de desmonte em rodovia com técnicas de detonação controlada, priorizando segurança, controle de fragmentos e mínima interferência no entorno.",
-      image: "/images/terraplanagem.png",
+      image: "/images/explosao.png",
     },
     {
       title: "Desmonte controlado com explosivos",
       location: "Operação em ambiente controlado - Fábrica da Nestlé",
       description:
         "Execução de desmonte com uso de explosivos para fragmentação eficiente, com controle de vibração, ruído e dispersão de materiais.",
-      image: "/images/nestle.DNG",
+      image: "/images/nestle.jpg",
     },
     {
       title: "Fragmentação de rocha",
       location: "Preparação para remoção e escavação",
       description:
         "Fragmentação de rocha após desmonte, facilitando a remoção do material e garantindo maior produtividade para as etapas seguintes da obra.",
-      image: "/images/explosao.jpg",
+      image: "/images/fragmento.png",
     },
     {
       title: "Perfuração e Detonação de rocha com equipamento especializado",
       location: "Autódromo de Goiânia",
       description:
         "Perfuração gabaritada com uso de perfuratriz e compressor de alta pressão, garantindo precisão no posicionamento e eficiência na preparação do desmonte.",
-      image: "/images/autodromo.HEIC",
+      image: "/images/autodromo.jpg",
     },
     {
       title: "Escavação e conformação de talude",
