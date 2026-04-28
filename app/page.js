@@ -106,42 +106,42 @@ export default function ArcomexSite() {
       location: "Área com tráfego e entorno sensível",
       description:
         "Operação de desmonte em rodovia com técnicas de detonação controlada, priorizando segurança, controle de fragmentos e mínima interferência no entorno.",
-      image: "/images/rodovia.jpg",
+      image: "/images/terraplanagem.png",
     },
     {
       title: "Desmonte controlado com explosivos",
-      location: "Operação em ambiente controlado",
+      location: "Operação em ambiente controlado - Fábrica da Nestlé",
       description:
         "Execução de desmonte com uso de explosivos para fragmentação eficiente, com controle de vibração, ruído e dispersão de materiais.",
-      image: "/images/explosao.jpg",
+      image: "/images/nestle.DNG",
     },
     {
       title: "Fragmentação de rocha",
       location: "Preparação para remoção e escavação",
       description:
         "Fragmentação de rocha após desmonte, facilitando a remoção do material e garantindo maior produtividade para as etapas seguintes da obra.",
-      image: "/images/fragmento.jpg",
+      image: "/images/explosao.jpg",
     },
     {
-      title: "Perfuração de rocha com equipamento especializado",
-      location: "Frente de corte em operação",
+      title: "Perfuração e Detonação de rocha com equipamento especializado",
+      location: "Autódromo de Goiânia",
       description:
         "Perfuração gabaritada com uso de perfuratriz e compressor de alta pressão, garantindo precisão no posicionamento e eficiência na preparação do desmonte.",
-      image: "/images/perfuracao.jpg",
+      image: "/images/autodromo.HEIC",
     },
     {
       title: "Escavação e conformação de talude",
       location: "Obra de infraestrutura em encosta",
       description:
         "Execução de escavação e conformação de talude para estabilização e preparação do terreno, com foco em segurança geotécnica e continuidade da obra.",
-      image: "/images/talude.jpg",
+      image: "/images/talude.png",
     },
     {
       title: "Terraplenagem em rodovia",
       location: "Preparação de base para infraestrutura viária",
       description:
         "Serviço de terraplenagem com equipamentos pesados para nivelamento, compactação e preparação do solo para as etapas posteriores da obra.",
-      image: "/images/terraplanagem.jpg",
+      image: "/images/terraplanagem.png",
     },
   ];
 
