@@ -106,7 +106,7 @@ export default function ArcomexSite() {
       location: "Área com tráfego e entorno sensível",
       description:
         "Operação de desmonte em rodovia com técnicas de detonação controlada, priorizando segurança, controle de fragmentos e mínima interferência no entorno.",
-      image: "/images/explosao.png",
+      image: "/images/explosao.jpg",
     },
     {
       title: "Desmonte controlado com explosivos",
