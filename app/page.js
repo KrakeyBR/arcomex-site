@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import {
   Phone,
   ShieldCheck,
@@ -99,12 +101,48 @@ export default function ArcomexSite() {
   ];
 
   const gallery = [
-    { title: "Desmonte para terraplenagem em rodovia", location: "Goiás" },
-    { title: "Desmonte controlado em área urbana", location: "Centro-Oeste" },
-    { title: "Perfuração de frente de corte", location: "Projeto de loteamento" },
-    { title: "Fragmentação de rocha para drenagem", location: "Infraestrutura" },
-    { title: "Desmonte técnico para fundação", location: "Empreendimento industrial" },
-    { title: "Perfuração em talude", location: "Estabilização de encosta" },
+    {
+      title: "Desmonte de rocha em rodovia",
+      location: "Área com tráfego e entorno sensível",
+      description:
+        "Operação de desmonte em rodovia com técnicas de detonação controlada, priorizando segurança, controle de fragmentos e mínima interferência no entorno.",
+      image: "/images/rodovia.jpg",
+    },
+    {
+      title: "Desmonte controlado com explosivos",
+      location: "Operação em ambiente controlado",
+      description:
+        "Execução de desmonte com uso de explosivos para fragmentação eficiente, com controle de vibração, ruído e dispersão de materiais.",
+      image: "/images/explosao.jpg",
+    },
+    {
+      title: "Fragmentação de rocha",
+      location: "Preparação para remoção e escavação",
+      description:
+        "Fragmentação de rocha após desmonte, facilitando a remoção do material e garantindo maior produtividade para as etapas seguintes da obra.",
+      image: "/images/fragmento.jpg",
+    },
+    {
+      title: "Perfuração de rocha com equipamento especializado",
+      location: "Frente de corte em operação",
+      description:
+        "Perfuração gabaritada com uso de perfuratriz e compressor de alta pressão, garantindo precisão no posicionamento e eficiência na preparação do desmonte.",
+      image: "/images/perfuracao.jpg",
+    },
+    {
+      title: "Escavação e conformação de talude",
+      location: "Obra de infraestrutura em encosta",
+      description:
+        "Execução de escavação e conformação de talude para estabilização e preparação do terreno, com foco em segurança geotécnica e continuidade da obra.",
+      image: "/images/talude.jpg",
+    },
+    {
+      title: "Terraplenagem em rodovia",
+      location: "Preparação de base para infraestrutura viária",
+      description:
+        "Serviço de terraplenagem com equipamentos pesados para nivelamento, compactação e preparação do solo para as etapas posteriores da obra.",
+      image: "/images/terraplanagem.jpg",
+    },
   ];
 
   const testimonials = [
@@ -322,21 +360,45 @@ export default function ArcomexSite() {
       <section id="obras" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-12 max-w-3xl">
           <p className="text-sm font-bold uppercase tracking-[0.28em] text-red-500">Obras executadas</p>
-          <h2 className="mt-4 text-4xl font-black sm:text-5xl">Experiência construída em campo</h2>
+          <h2 className="mt-4 text-4xl font-black sm:text-5xl">Cases reais executados em campo</h2>
           <p className="mt-5 text-lg leading-8 text-neutral-300">
-            Portfólio preparado para apresentar operações, contextos de obra e capacidade de execução da ARCOMEX.
+            Operações executadas em campo, do desmonte à preparação final do terreno, com controle técnico e segurança em todas as etapas.
+          </p>
+          <p className="mt-3 font-semibold text-red-500">
+            Portfólio técnico com aplicações em rodovias, áreas industriais, taludes, loteamentos e frentes de corte.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {gallery.map((item) => (
-            <div key={item.title} className="group overflow-hidden rounded-[30px] border border-white/10 bg-black">
-              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-neutral-800 via-neutral-900 to-black">
-                <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.85),rgba(0,0,0,0.2))]" />
-                <div className="absolute bottom-0 p-6">
-                  <h3 className="text-xl font-bold leading-8 text-white">{item.title}</h3>
-                  <p className="text-sm uppercase tracking-[0.18em] text-neutral-300">{item.location}</p>
-                </div>
+          {gallery.map((item, index) => (
+            <div
+              key={item.title}
+              className="group relative overflow-hidden rounded-[30px] border border-white/10 bg-black shadow-2xl shadow-black/30"
+            >
+              <div className="relative h-[340px] overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  className="object-cover transition duration-700 group-hover:scale-110"
+                />
+              </div>
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-black/10 transition duration-500 group-hover:via-black/75" />
+
+              <div className="absolute left-0 top-0 m-5 rounded-2xl border border-red-500/30 bg-red-600 px-4 py-2 text-sm font-black text-white shadow-lg shadow-red-950/30">
+                0{index + 1}
+              </div>
+
+              <div className="absolute bottom-0 p-6">
+                <h3 className="text-xl font-bold leading-8 text-white">{item.title}</h3>
+                <p className="mt-1 text-sm font-semibold uppercase tracking-[0.16em] text-red-400">
+                  {item.location}
+                </p>
+                <p className="mt-3 text-sm leading-6 text-neutral-300 opacity-90 transition duration-500 md:opacity-0 md:translate-y-3 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
