@@ -106,7 +106,7 @@ export default function ArcomexSite() {
       location: "Área com tráfego e entorno sensível",
       description:
         "Operação de desmonte em rodovia com técnicas de detonação controlada, priorizando segurança, controle de fragmentos e mínima interferência no entorno.",
-      image: "/images/explosao.png",
+      image: "/images/explosao.jpg",
     },
     {
       title: "Desmonte controlado com explosivos",
@@ -179,11 +179,15 @@ export default function ArcomexSite() {
 
       <header className="sticky top-0 z-40 border-b border-white/10 bg-black/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div>
-            <div className="text-2xl font-black tracking-[0.35em] text-white">ARCOMEX</div>
-            <div className="mt-1 text-[11px] uppercase tracking-[0.3em] text-red-500">
-              Perfuração e Desmonte de Rocha
-            </div>
+          <div className="flex items-center">
+            <Image
+              src="/images/arcomexLogo.png"
+              alt="ARCOMEX - Soluções em Desmonte"
+              width={260}
+              height={70}
+              priority
+              className="h-14 w-auto object-contain"
+            />
           </div>
 
           <nav className="hidden items-center gap-7 text-sm text-neutral-300 md:flex">
